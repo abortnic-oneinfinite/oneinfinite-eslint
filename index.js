@@ -23,7 +23,6 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module'
     },
-    "ignorePatterns": [".eslintrc.js"],
     "overrides": [],
     "rules": {
         /**  eslint default config*/
@@ -324,48 +323,5 @@ module.exports = {
         "yield-star-spacing": ["error", "both"],
         "yoda": ["error", "never"],
         "no-unused-vars": "off",
-    },
-    /**  @typescript-eslint/eslint-plugin custom config*/
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/naming-convention": [
-        "error",
-        {
-            "selector": "variable",
-            "format": ["camelCase", "UPPER_CASE", "PascalCase"]
-        },
-        {
-            "selector": "function",
-            "format": ["PascalCase", "camelCase"]
-        },
-        {
-            "selector": "parameter",
-            "format": ["camelCase", "PascalCase"],
-            "leadingUnderscore": "allow"
-        },
-
-        {
-            "selector": "memberLike",
-            "modifiers": ["private"],
-            "format": ["camelCase"],
-            "leadingUnderscore": "require"
-        },
-        {
-            "selector": "typeLike",
-            "format": ["PascalCase"]
-        },
-        {
-            "selector": "enum",
-            "format": ["UPPER_CASE"]
-        },
-        {
-            "selector": "classMethod",
-            "format": ["camelCase"]
-        }
-    ],
-    "@typescript-eslint/no-empty-interface": [
-        "error",
-        {
-            "allowSingleExtends": true
-        }
-    ]
+    }
 }
